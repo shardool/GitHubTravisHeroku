@@ -1,0 +1,9 @@
+language:
+- 'node_js'
+node_js:
+- '5.3.0'
+- 'iojs'
+script:
+- 'echo captain spock rocks'
+after_script:
+- ' this is the after script of star trek'

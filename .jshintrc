@@ -1,0 +1,17 @@
+{
+    "strict":true
+    ,"undef":true
+    ,"latedef":true
+    ,"unused":true
+    ,"curly":true
+    ,"quotmark":true
+    ,"browser":true
+    ,"node":true
+    ,"freeze":false
+    ,"laxcomma":true
+    ,"trailing":true
+    ,"globals":{
+        "angular":true
+        ,"projectTracker":true
+    }
+}
