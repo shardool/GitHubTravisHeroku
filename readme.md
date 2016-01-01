@@ -78,3 +78,16 @@ http.createServer(function(req,res){
 ssh -v git@github.com
 ssh -v git@bitbucket.org
 ssh -v git@heroku.com
+
+####commands
+```
+heroku keys //displays all keys added to keychain
+```
+
+```
+heroku keys:add <path to private key> //adds the private key to keychain
+```
+
+```
+heroku keys:remove <name of the keyowner> //removes the private key from keychain
+```
