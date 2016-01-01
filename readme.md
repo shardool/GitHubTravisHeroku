@@ -17,11 +17,12 @@ after_script:
 - 'echo some script that runs after the above script runs'
 ```
 <<<<< end of file >>>>>
-- add a file named **Procfile** with the following content
+
 ```
 web: node app.js // where app.js is the script file to be run
 ```
 ### Heroku Deployment
+- add a file named **Procfile** with the following content
 - create Heroku account, generate API key and add ssh public key
 - heroku toolbelt must be installed and be accessible from the commandline
 - travis (sudo gem install travis-lint) should be installed be accessible from commandline 
@@ -55,6 +56,10 @@ heroku logs --tail
 ```
 heroku local web
 ```
+- To launch the heroku-hosted app from commandline, execute the following
+```
+heroku open
+```
 *** GOTCHA: ***
 
 Always let the hosting environment decide the port it wants to listen for incoming requests and never hardcode one.
@@ -67,3 +72,8 @@ http.createServer(function(req,res){
     res.end();
 }).listen(process.env.PORT || 42000); // when running locally will listen on 42000
 ```
+### check if the SSH private keys have been loaded by executing the following
+```
+ssh -v git@github.com
+ssh -v git@bitbucket.org
+ssh -v git@heroku.com
