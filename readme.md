@@ -18,11 +18,12 @@ after_script:
 ```
 <<<<< end of file >>>>>
 
+### Heroku Deployment
+- add a file named **Procfile** with the following content
 ```
 web: node app.js // where app.js is the script file to be run
 ```
-### Heroku Deployment
-- add a file named **Procfile** with the following content
+
 - create Heroku account, generate API key and add ssh public key
 - heroku toolbelt must be installed and be accessible from the commandline
 - travis (sudo gem install travis-lint) should be installed be accessible from commandline 
