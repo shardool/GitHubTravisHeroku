@@ -1,9 +1,16 @@
 language:
-- 'node_js'
+- node_js
 node_js:
-- '5.3.0'
-- 'iojs'
+- 5.3.0
+- iojs
 script:
-- 'echo captain spock rocks'
+- echo captain spock rocks
 after_script:
 - ' this is the after script of star trek'
+deploy:
+  provider: heroku
+  api_key:
+    secure: HFF9ToB/V1LDV8XRKDoWV83sH3Egw1qKupN6BBSbbDhHODifyw8fKJvEyx4xWfRN7DkAGMM6vb5lQjP/c4DNh8QDxSrkB32v2kCPLXWwvkeDIvxJtrza9VHoZU9PPyoGiRkJGU9ukBRdNKSr9KAf39WmgV+TEjQZJ4qzFIkCL169Nbe6Huz6xst+NXoo5RCtbGwpu3AjXYydIsAT6SYme0qi2l7cr6OZTS05eD0wGnkAb4rVnKdszGgFjYtT7WxLIJZPCFWeUdY6508tPcktonCwlP7RWTW/3Z7tOdfy4DA+xCHPBm88FUA/Nw0NcsutlxSqe4bxiueCBJ3ibyCk7jCc532Chw0SqUYfgWFyIVwoTaJqa1jHrRrtFRH+f51o5yhgsY/qSxJB7gNwcXFUeBTcenCUnd/SOy8z3Ro+koJ6K0DTvh7DtOFmNx4+Iuryf0HTsHuL8CyKR4z5xeQXF/pJ08Qp9zNA2tuY22ct9C0S5Y6scJHkfVnnZdj4QbSSjrH1kSuWBgH702H4pKcdpn6uH1l/77ANmteCGuVsaNDis6nciy6I/Tbp4VhHRFdGF+QZ6sxevki46am8UQds0zKrqNyhhcB3FvOt+Cma3xYQ36oCIx00PaYsP3VOWvMJlKeNI2Bakq4oWnpvnvwegi61dusGdodCqO/If9WTVw4=
+  app: shartrek
+  on:
+    repo: shardool/startrek
