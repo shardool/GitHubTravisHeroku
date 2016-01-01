@@ -4,6 +4,6 @@ http.createServer(function (req, res) {
     res.writeHead(200, {
         'content-type': 'text/plain'
     });
-    res.write('shar trek is an awesome show');
+    res.write('shar trek is an awesome show. super cool app');
     res.end();
 }).listen(process.env.PORT || 44000);
